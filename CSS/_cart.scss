@@ -1,0 +1,33 @@
+.main__section--cart {
+    width: 31.25rem;
+    background-color: $backgroundhover;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    height: 100%;
+    position: fixed;
+    right: -200%;
+    top: 6.9rem;
+    box-shadow: $boxshadow;
+    border-radius: 1rem;
+    .main__cart--mainpic {
+        width: 5rem;}
+    h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 1.4rem 0;
+        box-sizing: border-box;}
+    div {
+        border-bottom: .1rem solid #333;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: .9rem;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+        p:nth-child(3) {
+            font-weight: 600;}}   
+    .main__cart--removeicon {
+        width: 1vw;}
+}

@@ -1,0 +1,103 @@
+/*Media queries*/
+@media screen and (max-width: 41rem) {
+
+    .main__banner p {
+        font-weight: 700;
+        opacity: 0.85;
+    }
+    .main__section--video {
+        flex-direction: column;
+        video {
+            width: 23rem;}
+    }
+    
+    .main__section--buttons {
+   
+        padding: 1rem;
+        a {
+            padding: .5em;   
+            font-size: 1em;
+        }
+    }
+    .main__banner--h4 {
+        
+        background-position-y: 36%;
+        font-size: .9rem;
+       
+    }
+    .footer__article--logos  img {
+        width: 3rem;
+        }
+    .main__section--cart {
+        width: 100%;
+        padding: 2rem;
+        height: 100%;
+        top: 11rem;
+        box-shadow: none;
+        .main__cart--mainpic {
+            width: 6rem;}
+        h2 {
+            font-size: 1.4rem;
+            padding: 1rem 0;}
+        div {
+            justify-content: space-evenly;
+        }    
+        .main__cart--removeicon {
+            width: 1rem;
+        }   
+    }
+
+
+    .main__cart--removeicon {
+        width: 1rem;
+}
+}
+@media screen and (min-width: 41em) and (max-width: 44em) {
+    .main__section--video  {
+        width: 100%;
+        justify-content: center ;
+        .main__banner--dsdbanner {
+        padding: 1rem 1rem ; 
+        }}
+    
+    .main__section--buttons {
+        padding: 1rem;
+        justify-content: space-between;
+        article {
+            padding: 1rem;} 
+        a {
+            font-size: .8rem;
+        }
+    }
+    .main__banner--h4 {
+       
+        background-position-y: 36%;
+        border-radius: .5em;
+        font-size: .9rem;
+        
+    }
+    
+    .footer__article--logos  img {
+        width: 4rem;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .body {
+        background-color: #333;
+    }
+}
+@media (hover: hover){ 
+    .main__section--gallery  img:hover {
+        border-color: $hovercolor;
+    }
+    .main__article--course:hover {
+        @include hoverstyle;
+    }
+    .main__button:hover{
+       @include hoverstyle;
+    .main__article--fundive:hover {
+        @include hoverstyle;
+        }
+    }
+
+}

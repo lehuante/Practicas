@@ -1,0 +1,23 @@
+.main__article--fundive {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: .5rem;
+    align-items: center;
+    color:$maincolor;;
+    border-width: .06rem;
+    min-height: 3.6rem;
+    max-height: 32.87rem;
+    margin-bottom: .2rem; 
+    font-size: .9rem;
+    @include borderstyle();
+    cursor: pointer;
+    p:nth-child(6) {
+        font-weight: 700;
+        font-size: clamp(0.7rem, 0.271rem + 1.143vw, 1.3rem);}
+    &:hover {
+        background-color: $backgroundhover;
+        color: $hovercolor;
+        border-color: $hovercolor;
+    }
+}

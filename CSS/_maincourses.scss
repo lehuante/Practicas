@@ -1,0 +1,64 @@
+.main_section--bannercourses {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column  ;
+    background-image: url(imgstil/turtlediver.jpeg);    
+    background-position-y: 30%;
+    border-radius: .9rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .9;
+    font-size: clamp(0.8rem, 0.157rem + 1.714vw, 1.7rem);    
+    color: rgb(240, 248, 255);
+    align-items: center;
+    padding: .2rem;
+    margin-top: .1rem;
+}
+.main__section--gridcourses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,.9fr));
+    gap: .5rem;
+    padding: 1rem;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-around;
+    font-size: clamp(0.6rem, -0.186rem + 2.095vw, 1.7rem);
+    .main__article--course {
+        display: flex;
+        flex-direction: column;
+        width: 16rem;                   
+        box-sizing: border-box;
+        box-shadow: inset $boxshadow;
+        border-radius: 1.7rem;
+        justify-content: space-between;
+        align-items: center;
+        border-style: solid;
+        border-color: $maincolor;
+        background-color: $backgroundhover;
+        color: $maincolor;
+        padding: 1rem;
+        cursor: pointer;
+        border-width: .2rem;
+        p {
+            font-size: clamp(0.9rem, 0.543rem + 0.952vw, 1.4rem);
+            justify-content: center;
+            padding: .2rem;
+        }
+        p:first-child {
+            font-size: clamp(1.2rem, 0.486rem + 1.905vw, 2.2rem);
+            font-weight: 700;
+            justify-content: center;
+        }
+        p:nth-child(4) {
+            font-weight: 700;
+            font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);
+        }
+    }
+    .main__article--course:hover {
+        background-color: $backgroundhover;
+        color: $hovercolor;
+    }
+}

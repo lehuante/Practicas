@@ -1,0 +1,12 @@
+/*mixin*/
+@mixin  borderstyle {
+    box-sizing: border-box;
+    border-radius: .5rem;
+    border-style: solid;
+    border-color: $maincolor;
+}
+@mixin hoverstyle {
+    background-color: $backgroundhover;
+    color: $hovercolor;
+    border-color: $hovercolor;
+}

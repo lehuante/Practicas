@@ -1,0 +1,87 @@
+.main__banner {
+    width: 100%;
+    text-align: center;
+    padding: .35rem;
+    background-image: url(imgstil/reefdiver.jpeg);
+    background-position-y: 29%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-top: .3rem;
+    border-radius: .5em;
+    p {
+        font-size: clamp(1.6rem, 0.957rem + 1.714vw, 2.5rem);   
+        text-decoration: none;
+        color: rgb(214, 245, 255);    
+    }
+    &:hover {
+        color: $hovercolor;
+
+    }
+}
+
+.main__section--video {
+    display: flex;
+    box-sizing: border-box;  
+    flex-direction: row;
+    gap: .5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    margin-top: .5rem;
+    .main__banner--dsdbanner {
+        background-image: url(imgstil/discovering.jpg);
+        background-position: 10%;
+        padding: 9rem 1rem ;
+        font-size: 1.7rem;
+        @include borderstyle();
+        width: 40%;
+    
+    }
+    video {
+        width: 40%;  
+        @include borderstyle();
+    }
+}  
+.main__section--buttons {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    padding: 3rem; /*    */
+    justify-content: space-around;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+    a {
+        padding: 1em;   
+        border-radius: 50% 20% / 10% 40%;
+        border-color: $maincolor;
+        border-style: solid;
+        font-size: 1.5em  ; /*este cambio*/
+        font-weight: 600;
+        text-decoration: none;
+        opacity: .85;
+    }
+    
+    a:hover {
+        background-color: $backgroundhover;
+        color: $hovercolor;}
+}
+.main__banner--h4 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%; 
+    background-image: url(imgstil/EAGLERAY.JPG);   
+    background-size: cover; 
+    background-blend-mode: normal;
+    background-position-y: 27%; /*este cambio*/
+    font-size: 1.5rem; /*este cambio*/
+    font-weight: 600;
+    opacity: .9;
+    text-decoration: none;
+    color: rgb(243, 251, 255);
+    @include borderstyle();
+    text-align: center;
+}

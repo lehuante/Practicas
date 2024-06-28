@@ -1,0 +1,17 @@
+.main__section--gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 1rem;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center; 
+    width: 100%;
+    box-sizing: border-box;
+    img {
+        width: 15rem;
+    box-shadow: $boxshadow;
+    @include borderstyle;
+    border-radius: 1.7em;
+    border-width: .1rem;
+    }
+}
