@@ -23,9 +23,8 @@
 .main__section--video {
     display: flex;
     box-sizing: border-box;  
-    flex-direction: row;
-    gap: .5rem;
-    justify-content: space-around;
+    gap: 5rem;
+    justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     box-sizing: border-box;
@@ -36,12 +35,14 @@
         padding: 9rem 1rem ;
         font-size: 1.7rem;
         @include borderstyle();
-        width: 40%;
+        width: 24rem;
+        height: 23rem;
     
     }
     video {
-        width: 40%;  
+        width: 23rem;  
         @include borderstyle();
+        box-sizing: border-box;
     }
 }  
 .main__section--buttons {

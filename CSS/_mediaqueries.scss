@@ -6,9 +6,10 @@
         opacity: 0.85;
     }
     .main__section--video {
+        display: flex;
         flex-direction: column;
         video {
-            width: 23rem;}
+            width: 90%;}
     }
     
     .main__section--buttons {
@@ -91,7 +92,7 @@
         border-color: $hovercolor;
     }
     .main__article--course:hover {
-        @include hoverstyle;
+        @include nothoverstyle;
     }
     .main__button:hover{
        @include hoverstyle;

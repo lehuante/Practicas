@@ -10,3 +10,7 @@
     color: $hovercolor;
     border-color: $hovercolor;
 }
+@mixin nothoverstyle {
+    color: $maincolor;
+    border-color: $maincolor;
+}
