@@ -3,6 +3,9 @@
     width: 100%;
     font-weight: 300;
     margin: 0;
+    @include darkscheme {
+        background-color: #333;
+    }
 
 }
 

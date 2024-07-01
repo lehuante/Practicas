@@ -12,7 +12,11 @@
     p {
         font-size: clamp(1.6rem, 0.957rem + 1.714vw, 2.5rem);   
         text-decoration: none;
-        color: rgb(214, 245, 255);    
+        color: rgb(214, 245, 255);
+        @include smartphone {
+            font-weight: 700;
+            opacity: 0.85;
+        }    
     }
     &:hover {
         color: $hovercolor;
@@ -39,10 +43,24 @@
         height: 23rem;
     
     }
+    
     video {
         width: 23rem;  
         @include borderstyle();
         box-sizing: border-box;
+    }
+    @include smartphone {
+        display: flex;
+        flex-direction: column;
+        video {
+            width: 90%;}
+    }
+    @include tablet {
+        width: 100%;
+        justify-content: center ;
+        .main__banner--dsdbanner {
+            padding: 1rem 1rem ; 
+            }
     }
 }  
 .main__section--buttons {
@@ -68,6 +86,22 @@
     a:hover {
         background-color: $backgroundhover;
         color: $hovercolor;}
+    @include smartphone {
+        padding: 1rem;
+        a {
+            padding: .5em;   
+            font-size: 1em;
+        }
+    }
+    @include tablet {
+        padding: 1rem;
+        justify-content: space-between;
+        article {
+            padding: 1rem;} 
+        a {
+            font-size: .8rem;
+        }
+    }
 }
 .main__banner--h4 {
     display: flex;
@@ -85,4 +119,13 @@
     color: rgb(243, 251, 255);
     @include borderstyle();
     text-align: center;
+    @include smartphone {
+        background-position-y: 36%;
+        font-size: .9rem;
+    }
+    @include tablet {
+        background-position-y: 36%;
+        border-radius: .5em;
+        font-size: .9rem;
+    }
 }

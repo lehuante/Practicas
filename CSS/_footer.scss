@@ -2,6 +2,14 @@
     @extend %footflex;
     img {
         width: 5rem;
+        @include tablet {
+            width: 4rem;
+        }
+    }
+    @include smartphone {
+        img {
+            width: 3rem;
+            }
     }
 }
 .footer__article--ads {
