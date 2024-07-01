@@ -13,8 +13,8 @@
     @include borderstyle;
     border-radius: 1.7em;
     border-width: .1rem;
-    
-    @include hover {
-        border-color: $hovercolor;
-    }}
+    &:hover {
+        @include hoverstyle
+    }
+   }
 }

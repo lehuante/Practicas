@@ -13,10 +13,7 @@
         font-size: clamp(1.6rem, 0.957rem + 1.714vw, 2.5rem);   
         text-decoration: none;
         color: rgb(214, 245, 255);
-        @include smartphone {
-            font-weight: 700;
-            opacity: 0.85;
-        }    
+         
     }
     &:hover {
         color: $hovercolor;
@@ -26,6 +23,7 @@
 
 .main__section--video {
     display: flex;
+    width: 100%;
     box-sizing: border-box;  
     gap: 5rem;
     justify-content: center;
@@ -33,13 +31,15 @@
     flex-wrap: nowrap;
     box-sizing: border-box;
     margin-top: .5rem;
+    
     .main__banner--dsdbanner {
         background-image: url(imgstil/discovering.jpg);
         background-position: 10%;
-        padding: 9rem 1rem ;
+        padding: 9rem 0rem ;
         font-size: 1.7rem;
+        width: 100%;
         @include borderstyle();
-        width: 24rem;
+        
         height: 23rem;
     
     }
@@ -47,20 +47,8 @@
     video {
         width: 23rem;  
         @include borderstyle();
+        border-style: none;
         box-sizing: border-box;
-    }
-    @include smartphone {
-        display: flex;
-        flex-direction: column;
-        video {
-            width: 90%;}
-    }
-    @include tablet {
-        width: 100%;
-        justify-content: center ;
-        .main__banner--dsdbanner {
-            padding: 1rem 1rem ; 
-            }
     }
 }  
 .main__section--buttons {
@@ -86,22 +74,8 @@
     a:hover {
         background-color: $backgroundhover;
         color: $hovercolor;}
-    @include smartphone {
-        padding: 1rem;
-        a {
-            padding: .5em;   
-            font-size: 1em;
-        }
-    }
-    @include tablet {
-        padding: 1rem;
-        justify-content: space-between;
-        article {
-            padding: 1rem;} 
-        a {
-            font-size: .8rem;
-        }
-    }
+
+    
 }
 .main__banner--h4 {
     display: flex;
@@ -112,20 +86,13 @@
     background-size: cover; 
     background-blend-mode: normal;
     background-position-y: 27%; /*este cambio*/
-    font-size: 1.5rem; /*este cambio*/
+    font-size: clamp(0.8rem, -0.057rem + 2.286vw, 2rem);
     font-weight: 600;
     opacity: .9;
     text-decoration: none;
     color: rgb(243, 251, 255);
     @include borderstyle();
     text-align: center;
-    @include smartphone {
-        background-position-y: 36%;
-        font-size: .9rem;
-    }
-    @include tablet {
-        background-position-y: 36%;
-        border-radius: .5em;
-        font-size: .9rem;
-    }
+    
+   
 }

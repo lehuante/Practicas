@@ -14,3 +14,105 @@
     color: $maincolor;
     border-color: $maincolor;
 }
+
+
+
+/* media queries */
+
+@media screen and (max-width: 41rem) {
+    .header__logo {
+        width: 5rem;
+    }
+    .header__img--icon {
+        width: 1.5rem;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .main__section--video {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .main__banner--top {
+        display: none;
+    }
+    .main__banner p {
+        font-weight: 700;
+            opacity: 0.85;
+    }
+    .main__section--buttons {
+        padding: 1rem;
+        a {
+            padding: .5em;   
+            font-size: 1em;
+        }
+    }
+    .main__banner--h4 {
+        background-position-y: 36%;
+        font-size: .9rem;
+    }
+    .main__cart--mainpic {
+        width: 100%;
+        padding: 2rem;
+        height: 100%;
+        top: 11rem;
+        box-shadow: none;
+        .main__cart--mainpic {
+            width: 6rem;}
+        h2 {
+            font-size: 1.4rem;
+            padding: 1rem 0;}
+        div {
+            justify-content: space-evenly;
+        }    
+        .main__cart--removeicon {
+            width: 1rem;
+        }
+    }
+    .footer__article--logos {
+        img {
+            width: 3rem;
+            }
+    }
+}
+
+@media screen and (min-width: 41rem) and (max-width: 44rem) {
+    .main__section--buttons {
+        padding: 1rem;
+        justify-content: space-between;
+        article {
+            padding: 1rem;} 
+        a {
+            font-size: .8rem;
+        }
+    }
+    .main__banner--h4 {
+        background-position-y: 36%;
+        border-radius: .5em;
+        font-size: .9rem;
+    }
+    .main__Section--video {
+        width: 100%;
+        justify-content: center ;
+    }
+    .main__banner--dsdbanner {
+        padding: 1rem 1rem;}
+    .footer__article--logos {
+        img {
+            width: 4rem;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    body {
+        background-color: rgb(18,18,18);
+   } 
+}
+@media (hover:hover) {
+   
+   .main__section--gallery  img {
+    border-color: $hovercolor;
+   }
+}

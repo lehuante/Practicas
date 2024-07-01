@@ -3,9 +3,8 @@
     width: 100%;
     font-weight: 300;
     margin: 0;
-    @include darkscheme {
-        background-color: #333;
-    }
+    padding: 0 auto;
+    
 
 }
 
@@ -20,21 +19,21 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
-        align-items:center;
+        align-items:flex-end;
+        width: 100%;
+        box-sizing: border-box;
         i {
             width: 3rem;
             cursor: pointer;
             display: inline-block;
-            img {
-                width: 100%;
-            }
+        
         }}
     .header__nav {
         display: flex;
         width: 100% ;
         flex-wrap: nowrap;
         justify-content: space-around;
-        font-size: clamp(1.2rem, 0.486rem + 1.905vw, 2.2rem);
+        font-size: clamp(0.8rem, -0.057rem + 2.286vw, 2rem);
         @include borderstyle ; 
         .header__link {
             color: $maincolor;
