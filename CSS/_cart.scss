@@ -29,5 +29,26 @@
         p:nth-child(3) {
             font-weight: 600;}}   
     .main__cart--removeicon {
+        @include smartphone {
+            width: 1rem;
+        }
         width: 1vw;}
+    @include smartphone {
+        width: 100%;
+        padding: 2rem;
+        height: 100%;
+        top: 11rem;
+        box-shadow: none;
+        .main__cart--mainpic {
+            width: 6rem;}
+        h2 {
+            font-size: 1.4rem;
+            padding: 1rem 0;}
+        div {
+            justify-content: space-evenly;
+        }    
+        .main__cart--removeicon {
+            width: 1rem;
+        }
+    }    
 }
