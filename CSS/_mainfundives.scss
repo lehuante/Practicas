@@ -11,7 +11,6 @@
     margin-bottom: .2rem; 
     font-size: .9rem;
     @include borderstyle();
-    cursor: pointer;
     p:nth-child(6) {
         font-weight: 700;
         font-size: clamp(0.7rem, 0.271rem + 1.143vw, 1.3rem);}
@@ -21,4 +20,18 @@
         border-color: $hovercolor;
     }
     
+}
+.addcart {
+    @include borderstyle();
+    color: $maincolor;
+    cursor: pointer;
+    &:hover {
+        border-color:$hovercolor;
+        color: $hovercolor;
+    }
+}
+.addCartButton {
+    @include borderstyle();
+    color: $maincolor;
+    cursor: pointer;
 }

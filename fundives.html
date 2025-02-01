@@ -10,19 +10,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit&family=Tilt+Neon&display=swap" rel="stylesheet">
 <!-- Aca falta incluir el link para CSS -->
 <link rel="stylesheet" href="CSS/styles.css">
+<script src="JS/functions.js" defer></script>
 </head>
 <body class="body">
     <header class="header">
         <section class="header__section--logos">
-        <i><img src="IMG/menu.svg" alt="menu" class="header__img--menu"></i>
-        <a href="index.html"><img src="IMG/Logo.png" alt="Logo" class="header__logo"></a>
-        <i><img src="IMG/cart.svg" alt="Cart" class="header__img--icon"></i>
+            <i><img src="IMG/menu.svg" alt="menu" class="header__img--menu"></i>
+            <a href="index.html"><img src="IMG/Logo.png" alt="Logo" class="header__logo"></a>
+            <i><img src="IMG/cart.svg" alt="Cart" class="header__img--cartIcon">
+                <span id="cartCont"  class="badge circle">2</span></i>
+            
+
         </section> 
-        <nav  class="header__nav" >
+        <!-- <nav  class="header__nav" >
             <a href="courses.html" class="header__link">Courses</a>
             <a href="Gallery.html" class="header__link">Gallery</a>
             <a href="fundives.html" class="header__link">Fun Dives</a>
-        </nav>
+        </nav> -->
     
     </header>
     <main>
@@ -34,83 +38,102 @@
 
         <section class="main__section--gallery">
             <article class="main__article--fundive  ">
-                <img src="IMG/diverrising.jpg" alt="">
-                <h2>2 Tank Dive Trip</h2>
+                <img src="IMG/diverrising.jpg" alt="" class="imagenes">
+                <h2 class="concepto">2 Tank Dive Trip</h2>
                 <p>National Marine Park fees included</p>
                 <p>Healthy snack on board and water</p>
                 <p>Diving groups up to 4 people</p>
-                <p>$ 2,200 <sub><small>MXN</small></sub></p>
+                <button class="addCartButton"> Add to Cart</button>
             <p class="cfoot"><small>Gear is not included</small></p>
+            <p class="precio">$ 2,200 <sub><small>MXN</small></sub></p>
 
             </article>
 
             <article class="main__article--fundive ">
-                <img src="IMG/twilight.jpg" alt="">
-                <h2>Twilight - 2 Tank Dive Trip</h2>
+                <img src="IMG/twilight.jpg" alt="" class="imagenes">
+                <h2 class="concepto">Twilight - 2 Tank Dive Trip</h2>
                 <p>National Marine Park fees included</p>
-                <p>Healthy snack on board and water</p>
+                <p>Healthy snacks on board and water</p>
                 <p>Diving groups up to 3 guests</p>
-                <p>$ 2,500 <sub><small>MXN</small></sub></p>
+                
+                <button class="addCartButton"> Add to Cart</button>
             <p class="cfoot"><small>Gear is not included</small></p>
-
+            <p class="precio">$ 2,500 <sub><small>MXN</small></sub></p>
             </article>
 
             <article class="main__article--fundive ">
-                <img src="IMG/reefdiver.jpeg" alt="">
-                <h2>Night 1 Tank Dive Trip</h2>
+                <img src="IMG/reefdiver.jpeg" alt="" class="imagenes">
+                <h2 class="concepto">Night 1 Tank Dive Trip</h2>
                 <p>National Marine Park fees included</p>
                 <p>1 tank </p>
                 <p>Diving groups up to 3 guests</p>
-                <p>$ 1,800 <sub><small>MXN</small></sub></p>
+                <button class="addCartButton"> Add to Cart</button>
             <p class="cfoot"><small>Gear is not included</small></p>
+            <p class="precio">$ 1,800 <sub><small>MXN</small></sub></p>
 
             </article>
             <article class="main__article--fundive ">
-                <img src="IMG/smilingdiver.jpeg" alt="">
-                <h2>Private Dive Master</h2>
+                <img src="IMG/smilingdiver.jpeg" alt="" class="imagenes">
+                <h2 class="concepto">Private Dive Master</h2>
                 <p>The perfect choice if you want to </p>
                 <p>experience Cozumel reefs at your</p>
                 <p>own pace</p>
-                <p>addittional $ 1,000 <sub><small>MXN</small></sub></p>
-            <p class="cfoot"><small>...</small></p>
+                <button class="addCartButton"> Add to Cart</button>           
+                <p class="cfoot"><small>...</small></p>
+                <p class="precio">addittional $ 1,000 <sub><small>MXN</small></sub></p>
+
             </article>
             <article class="main__article--fundive ">
-                <img src="IMG/ladydiver.jpeg" alt="">
-                <h2>Private Charter</h2>
+                <img src="IMG/ladydiver.jpeg" alt="" class="imagenes">
+                <h2 class="concepto">Private Charter</h2>
                 <p>Up to 5 guests diving 2 tanks</p>
                 <p>Snacks and water onboard</p>
                 <p>Extra guest $1,000 <sub><small>MXN</small></sub></p>
-                <p>$ 18,000 <sub><small>MXN</small></sub></p>
+                <button class="addCartButton"> Add to Cart</button>
             <p class="cfoot"><small>Up to 18 guests at a time. Please enquire for pricing</small></p>
+            <p class="precio">$ 18,000 <sub><small>MXN</small></sub></p>
 
             </article>
             
         </section>
-        <section class="main__section--cart">
-            <h2>Cart</h2>
-            <div>
-                <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
-                <p>Fundive</p>
-                <p>$2,200<sub><small>MXN</small></sub></p>
-                
-                <i><img src="IMG/remove.png" alt="iconoquitar" class="main__cart--removeicon"></i>
-            </div>
-
-            <div>
-                <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
-                <p>Fundive</p>
-                <p>$2,200<sub><small>MXN</small></sub></p>
-                
-                <i><img src="IMG/remove.png" alt="iconoquitar" class="main__cart--removeicon"></i>
-            </div>
-            <div>
-                <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
-                <p>Fundive</p>
-                <p>$2,200<sub><small>MXN</small></sub></p>
-                
-                <i><img src="IMG/remove.png" alt="iconoquitar" class="main__cart--removeicon"></i>
-            </div>
+        <section class="main__section--menu">
+            <img src="IMG/close.svg"  class="closeIconMenu">
+            <dl>
+                <dt><a href="index.html" class="">Home</a></dt>
+                <dt><a href="courses.html" class="">Courses</a></dt>
+                <dt><a href="Gallery.html" class="">Gallery</a></dt>
+                <dt><a href="fundives.html" class="">Fun Dives</a></dt>
+            </dl>
             
+        </section>
+        <section class="main__section--cartmain ">
+            <img src="IMG/close.svg"  class="closeIcon">
+            <button class="chekcoutButton">Checkout</button>
+
+            <h2>Cart</h2>
+            <section class="main__section--cart ">
+                <div class="cartProd">
+                        <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+                <div class="cartProd"> 
+                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+                <div class="cartProd">
+                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+            </section>
         </section>
 
 

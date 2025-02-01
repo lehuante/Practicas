@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit&family=Tilt+Neon&display=swap" rel="stylesheet">
 <!-- Aca falta incluir el link para CSS -->
 <link rel="stylesheet" href="CSS/styles.css">
+<script src="JS/functions.js" defer></script>
 </head>
 <body class="body">
     <header class="header">
@@ -18,16 +19,16 @@
         <a href="index.html"><img src="IMG/Logo.png" alt="Logo" class="header__logo"></a>
         <i><img src="IMG/cart.svg" alt="Cart" class="header__img--icon"></i>
         </section> 
-        <nav  class="header__nav" >
+        <!--<nav  class="header__nav" >
             <a href="courses.html" class="header__link">Courses</a>
             <a href="Gallery.html" class="header__link">Gallery</a>
             <a href="fundives.html" class="header__link">Fun Dives</a>
-        </nav>
+        </nav>-->
     
     </header>
     <main>
         <aside class="main__banner main__banner--top">
-            <a href="fundives.html"><p>Book a New Adventure</p></a>
+            <a href="fundives.html" id="booking"><p>Book a New Adventure</p></a>
         </aside>
         <section class="main__section--video" >
             <video src="VID/DSD-vid.mp4" controls autoplay replay ></video>
@@ -48,14 +49,25 @@
         </article> 
         </section>  
         <h4 class="main__banner--h4"><q> Not all treasure is silver and gold.</q></h4>
+        <section class="main__section--menu" class="main__menu--mainpic">
+            <img src="IMG/close.svg"  class="closeIconMenu">
+            <dl>
+                <dt><a href="index.html" class="">Home</a></dt>
+                <dt><a href="courses.html" class="">Courses</a></dt>
+                <dt><a href="Gallery.html" class="">Gallery</a></dt>
+                <dt><a href="fundives.html" class="">Fun Dives</a></dt>
+            </dl>
+            
+        </section>
         <section class="main__section--cart">
+            <img src="IMG/close.svg"  class="closeIcon">
             <h2>Cart</h2>
             <div>
                 <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
                 <p>Fundive</p>
                 <p>$2,200<sub><small>MXN</small></sub></p>
                 
-                <i><img src="IMG/remove.png" alt="iconoquitar" class="main__cart--removeicon"></i>
+                <i><img src="IMG/delete.svg" alt="iconoquitar" class="main__cart--removeicon"></i>
             </div>
 
             <div>
@@ -63,14 +75,14 @@
                 <p>Fundive</p>
                 <p>$2,200<sub><small>MXN</small></sub></p>
                 
-                <i><img src="IMG/remove.png" alt="iconoquitar" class="main__cart--removeicon"></i>
+                <i><img src="IMG/delete.svg" alt="iconoquitar" class="main__cart--removeicon"></i>
             </div>
             <div>
                 <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
                 <p>Fundive</p>
                 <p>$2,200<sub><small>MXN</small></sub></p>
                 
-                <i><img src="IMG/remove.png" alt="iconoquitar" class="main__cart--removeicon"></i>
+                <i><img src="IMG/delete.svg" alt="iconoquitar" class="main__cart--removeicon"></i>
             </div>
             
         </section>
@@ -96,7 +108,6 @@
                     </DIV>
         </section>
     </footer>
-
 
 
 </body>

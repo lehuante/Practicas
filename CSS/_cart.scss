@@ -1,14 +1,23 @@
-.main__section--cart {
-    width: 31.25rem;
+.main__section--cartmain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 20rem;
     background-color: $backgroundhover;
-    padding: 1.5rem;
+    padding: 1rem;
     box-sizing: border-box;
-    height: 100%;
+    height: 70%;
     position: fixed;
-    right: -200%;
-    top: 6.9rem;
+    right: -250%;
+    bottom: 5%;
     box-shadow: $boxshadow;
     border-radius: 1rem;
+    transition: all .25s ease;
+
+    &.show {
+        right: 0;
+    }
     .main__cart--mainpic {
         width: 5rem;}
     h2 {
@@ -29,6 +38,22 @@
         p:nth-child(3) {
             font-weight: 600;}}   
     .main__cart--removeicon {
-        
+        cursor: pointer;
         width: 1vw;}    
+    button {
+        @include borderstyle();
+        color: $maincolor;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+}
+.closeIcon { 
+    width: 10%;
+    opacity: .7;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+img {
+    width: 5rem;
 }
