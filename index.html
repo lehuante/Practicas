@@ -15,15 +15,18 @@
 <body class="body">
     <header class="header">
         <section class="header__section--logos">
-        <i><img src="IMG/menu.svg" alt="menu" class="header__img--icon"></i>
-        <a href="index.html"><img src="IMG/Logo.png" alt="Logo" class="header__logo"></a>
-        <i><img src="IMG/cart.svg" alt="Cart" class="header__img--icon"></i>
+            <i><img src="IMG/menu.svg" alt="menu" class="header__img--menu"></i>
+            <a href="index.html"><img src="IMG/Logo.png" alt="Logo" class="header__logo"></a>
+            <i><img src="IMG/cart.svg" alt="Cart" class="header__img--cartIcon">
+                <span id="cartCont"  class="badge circle">2</span></i>
+            
+
         </section> 
-        <!--<nav  class="header__nav" >
+        <!-- <nav  class="header__nav" >
             <a href="courses.html" class="header__link">Courses</a>
             <a href="Gallery.html" class="header__link">Gallery</a>
             <a href="fundives.html" class="header__link">Fun Dives</a>
-        </nav>-->
+        </nav> -->
     
     </header>
     <main>
@@ -86,6 +89,46 @@
             </div>
             
         </section>
+        <section class="main__section--menu">
+            <img src="IMG/close.svg"  class="closeIconMenu">
+            <dl>
+                <dt><a href="index.html" class="">Home</a></dt>
+                <dt><a href="courses.html" class="">Courses</a></dt>
+                <dt><a href="Gallery.html" class="">Gallery</a></dt>
+                <dt><a href="fundives.html" class="">Fun Dives</a></dt>
+            </dl>
+            
+        </section>
+        <section class="main__section--cartmain ">
+            <img src="IMG/close.svg"  class="closeIcon">
+            <button class="chekcoutButton">Checkout</button>
+
+            <h2>Cart</h2>
+            <section class="main__section--cart ">
+                <div class="cartProd">
+                        <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+                <div class="cartProd"> 
+                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+                <div class="cartProd">
+                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+            </section>
+        </section>
+
     </main>
     <hr>
     <footer>

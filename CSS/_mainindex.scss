@@ -1,7 +1,6 @@
 .main__banner {
     width: 100%;
     text-align: center;
-    padding: .35rem;
     background-image: url(imgstil/reefdiver.jpeg);
     background-position-y: 29%;
     background-repeat: no-repeat;
@@ -10,8 +9,7 @@
     margin-top: .3rem;
     border-radius: .5em;
     p {
-        font-size: clamp(1.6rem, 0.957rem + 1.714vw, 2.5rem);   
-        text-decoration: none;
+        font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);        text-decoration: none;
         color: rgb(214, 245, 255);
          
     }
