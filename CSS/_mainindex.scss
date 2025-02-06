@@ -1,7 +1,8 @@
 .main__banner {
     width: 100%;
     text-align: center;
-    background-image: url(imgstil/reefdiver.jpeg);
+    background-image: url(imgstil/reef.jpg);
+    font-weight: 500;
     background-position-y: 29%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,69 +30,51 @@
     flex-wrap: nowrap;
     box-sizing: border-box;
     margin-top: .5rem;
-    
-    .main__banner--dsdbanner {
-        background-image: url(imgstil/discovering.jpg);
-        background-position: 10%;
-        padding: 9rem 0rem ;
-        font-size: 1.7rem;
-        width: 100%;
-        @include borderstyle();
-        
-        height: 23rem;
-        width: 23rem;
-    
-    }
-    
     video {
-        width: 23rem;  
+        width: 40%;  
         @include borderstyle();
         border-style: none;
         box-sizing: border-box;
     }
 }  
-.main__section--buttons {
-    display: none;
-    width: 100%;
-    box-sizing: border-box;
-    flex-wrap: nowrap;
-    padding: 3rem; /*    */
-    justify-content: space-around;
-    margin-top: .7rem;
-    margin-bottom: .7rem;
-    a {
-        padding: 1em;   
-        border-radius: 50% 20% / 10% 40%;
-        border-color: $maincolor;
-        border-style: solid;
-        font-size: 1.5em  ; /*este cambio*/
-        font-weight: 600;
-        text-decoration: none;
-        opacity: .85;
-    }
-    
-    a:hover {
-        background-color: $backgroundhover;
-        color: $hovercolor;}
 
-    
-}
 .main__banner--h4 {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%; 
     background-image: url(imgstil/EAGLERAY.JPG);   
     background-size: cover; 
     background-blend-mode: normal;
-    background-position-y: 27%; /*este cambio*/
+    background-position-y: 30%; 
     font-size: clamp(0.8rem, -0.057rem + 2.286vw, 2rem);
     font-weight: 600;
-    opacity: .9;
+    opacity: 1;
     text-decoration: none;
     color: rgb(243, 251, 255);
     @include borderstyle();
     text-align: center;
-    
-   
 }
+.main__section--nav {
+    display: flex;
+    flex-direction: column;
+    width: 45% ;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: clamp(0.8rem, -0.057rem + 2.286vw, 2rem);
+    height: 23rem;
+    justify-content: space-evenly;
+    @include borderstyle ; 
+    background-image: url(imgstil/discovering.jpg);   
+    background-size: cover; 
+    background-blend-mode: normal;
+    background-position-y: 27%; 
+    opacity: .8;
+    .main__nav--a {
+        color: $maingrey;
+        text-decoration: none; 
+        font-weight: 800; 
+        padding: .7rem;
+        
+    }
+    }

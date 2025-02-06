@@ -1,19 +1,16 @@
-//console.log(iconRemove)
-
-
-
-
 const cartIcon = document.querySelector(".header__img--cartIcon");
 const cart = document.querySelector(".main__section--cartmain");
-//console.log(cartIcon);
-
 cartIcon.addEventListener("click", () => {
     cart.classList.toggle("show");
 });
 
 const closeCart = cart.firstElementChild;
+const checkOut = document.querySelector(".chekcoutButton");
 closeCart.addEventListener("click", () => {
-    cart.classList.toggle("show");
+    cart.classList.remove("show");
+});
+checkOut.addEventListener("click", () => {
+    cart.classList.remove("show");
 });
 
 const menuIcon = document.querySelector(".header__img--menu");
@@ -24,113 +21,58 @@ menuIcon.addEventListener("click", () => {
 });
 const closeMenu = menu.firstElementChild;
 closeMenu.addEventListener("click", () => {
-    menu.classList.toggle("show");
-})
-const iconRemove = document.querySelectorAll(".remove");
+    menu.classList.remove("show");})
 
-const addToCart = document.querySelectorAll(".addCartButton");
-const cartProducts = document.querySelector(".main__section--cart");
 
-addToCart[0].addEventListener ("click", () => {
-        const padre = addToCart[0].parentElement;
-        const newElem = document.createElement("div");
-        newElem.setAttribute ("class","cartProd");
-        cartProducts.append (newElem);
-        const imagen = padre.firstElementChild;
-        const imagenClon = imagen.cloneNode (false);
-        newElem.append (imagenClon);
-        const concept = imagen.nextElementSibling;
-        const conceptClon = concept.cloneNode (true);
-        newElem.append(conceptClon);
-        const price = padre.lastElementChild;
-        const priceClon = price.cloneNode(true);
-        newElem.append(priceClon);
-        const iconRemove = document.querySelectorAll(".remove");
-        newElem.append(iconRemove);
-         })
+const iconRemove = document.querySelectorAll(".main__cart--removeicon");  
+const contador = document.getElementById("cartCont");   
+const cartProducts = document.querySelector(".main__section--cart"); 
+const addButton = document.querySelectorAll(".addCartButton");
+const lastProd = document.querySelector(".last_cartProd");
+//console.log(trashCan);
 
-         addToCart[1].addEventListener ("click", () => {
-            const padre = addToCart[1].parentElement;
-            const newElem = document.createElement("div");
-            newElem.setAttribute ("class","cartProd");
-            cartProducts.append (newElem);
-            const imagen = padre.firstElementChild;
-            const imagenClon = imagen.cloneNode (false);
-            newElem.append (imagenClon);
-            const concept = imagen.nextElementSibling;
-            const conceptClon = concept.cloneNode (true);
-            newElem.append(conceptClon);
-            const price = padre.lastElementChild;
-            const priceClon = price.cloneNode(true);
-            newElem.append(priceClon);
-            const iconRemove = document.querySelectorAll(".remove");
-            newElem.append(iconRemove);
-             })
-
-             addToCart[2].addEventListener ("click", () => {
-                const padre = addToCart[2].parentElement;
-                const newElem = document.createElement("div");
-                newElem.setAttribute ("class","cartProd");
-                cartProducts.append (newElem);
-                const imagen = padre.firstElementChild;
-                const imagenClon = imagen.cloneNode (false);
-                newElem.append (imagenClon);
-                const concept = imagen.nextElementSibling;
-                const conceptClon = concept.cloneNode (true);
-                newElem.append(conceptClon);
-                const price = padre.lastElementChild;
-                const priceClon = price.cloneNode(true);
-                newElem.append(priceClon);
-                const iconRemove = document.querySelectorAll(".remove");
-                newElem.append(iconRemove);
-                 })
-                 addToCart[3].addEventListener ("click", () => {
-                    const padre = addToCart[3].parentElement;
-                    const newElem = document.createElement("div");
-                    newElem.setAttribute ("class","cartProd");
-                    cartProducts.append (newElem);
-                    const imagen = padre.firstElementChild;
-                    const imagenClon = imagen.cloneNode (false);
-                    newElem.append (imagenClon);
-                    const concept = imagen.nextElementSibling;
-                    const conceptClon = concept.cloneNode (true);
-                    newElem.append(conceptClon);
-                    const price = padre.lastElementChild;
-                    const priceClon = price.cloneNode(true);
-                    newElem.append(priceClon);
-                    const iconRemove = document.querySelectorAll(".remove");
-                    newElem.append(iconRemove);
-                     })
-                     addToCart[4].addEventListener ("click", () => {
-                        const padre = addToCart[4].parentElement;
-                        const newElem = document.createElement("div");
-                        newElem.setAttribute ("class","cartProd");
-                        cartProducts.append (newElem);
-                        const imagen = padre.firstElementChild;
-                        const imagenClon = imagen.cloneNode (false);
-                        newElem.append (imagenClon);
-                        const concept = imagen.nextElementSibling;
-                        const conceptClon = concept.cloneNode (true);
-                        newElem.append(conceptClon);
-                        const price = padre.lastElementChild;
-                        const priceClon = price.cloneNode(true);
-                        newElem.append(priceClon);
-                        const iconRemove = document.querySelectorAll(".remove");
-                        newElem.append(iconRemove);
-                         })
-
-         
+contador.innerHTML = cartProducts.childElementCount;
 
 iconRemove.forEach (elem => { 
-        elem.addEventListener("click", () => {
+    elem.addEventListener("click", () => {
         const padre = elem.parentElement;
-        // console.log(padre);
         padre.remove();
-        })
-})   
+        contador.innerHTML = cartProducts.childElementCount;
+    })
 
-const contador = document.getElementById("cartCont");
-console.log(contador);
-contador.innerHTML = cartProducts.childElementCount;
-console.log(cartProducts.childElementCount);
+})
+
+addButton.forEach (elem => {
+    elem.addEventListener("click", () => {
+        const padre = elem.parentElement;
+        const pic = padre.firstElementChild;
+        const concepto = pic.nextElementSibling.innerText;
+        const precio = padre.lastElementChild.innerText;
+        const trashCan = iconRemove[0].cloneNode(false);
+        console.log(trashCan);
+        console.log(padre);
+        console.log(pic);
+        console.log(concepto);
+        console.log(precio);
+        const newSlot = document.createElement("div");
+        const newPic = pic.cloneNode(false);
+        const newConcepto = document.createElement("p");
+        newConcepto.innerText = concepto;
+        const newPrecio = document.createElement("p");
+        newPrecio.innerText = precio;
+        newSlot.appendChild(newPic);
+        newSlot.appendChild(newConcepto);
+        newSlot.appendChild(newPrecio);
+        newSlot.appendChild(trashCan);
+        cartProducts.appendChild(newSlot);  
+        contador.innerHTML = cartProducts.childElementCount;
+        trashCan.addEventListener("click", () => {
+            console.log("oprimi borrar")
+            trashCan.parentElement.remove();
+            contador.innerHTML = cartProducts.childElementCount;
+        })
+    } )
+})
+
+
 

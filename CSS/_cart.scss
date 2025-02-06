@@ -3,14 +3,14 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    width: 20rem;
+    width: 22rem;
     background-color: $backgroundhover;
     padding: 1rem;
     box-sizing: border-box;
-    height: 70%;
+   // height: 70%;
     position: fixed;
     right: -250%;
-    bottom: 5%;
+    top: 24%;
     box-shadow: $boxshadow;
     border-radius: 1rem;
     transition: all .25s ease;

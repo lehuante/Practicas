@@ -1,7 +1,5 @@
-const cartProd = document.querySelectorAll(".cartProd");
-        const borrarCart = cartProd.lastChild;
-        newElem.append(borrarCart);
+
+//console.log(iconRemove)
 
 
-        const borrar = document.createElement("img");
-        borrar.setAttribute("src" , "/IMG/delete.svg");
+

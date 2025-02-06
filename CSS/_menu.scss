@@ -3,12 +3,12 @@
     background-color: $backgroundhover;
     padding: 1.5rem;
     box-sizing: border-box;
-    height: 30%;
     position: fixed;
     left: -250%;
     top: 24%;
     box-shadow: $boxshadow;
     border-radius: 1rem;
+    transition: all .25s ease;
     &.show {
         left: 0;
     }
