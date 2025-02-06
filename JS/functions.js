@@ -23,6 +23,15 @@ const closeMenu = menu.firstElementChild;
 closeMenu.addEventListener("click", () => {
     menu.classList.remove("show");})
 
+const groupIcon = document.getElementById("groupReserveIcon");
+const group = document.querySelector(".main__section--groupReserve")
+
+groupIcon.addEventListener("click", () => {
+    group.classList.toggle("show");
+} )
+const closeGroup = group.firstElementChild;
+closeGroup.addEventListener("click", () => {
+    group.classList.remove("show");})
 
 const iconRemove = document.querySelectorAll(".main__cart--removeicon");  
 const contador = document.getElementById("cartCont");   
@@ -31,17 +40,16 @@ const addButton = document.querySelectorAll(".addCartButton");
 const lastProd = document.querySelector(".last_cartProd");
 //console.log(trashCan);
 
-contador.innerHTML = cartProducts.childElementCount;
-
 iconRemove.forEach (elem => { 
     elem.addEventListener("click", () => {
         const padre = elem.parentElement;
         padre.remove();
-        contador.innerHTML = cartProducts.childElementCount;
+        contador.innerText = cartProducts.childElementCount;
     })
-
 })
 
+
+//picButton.addEventListener("click",() => {})
 addButton.forEach (elem => {
     elem.addEventListener("click", () => {
         const padre = elem.parentElement;
@@ -49,11 +57,6 @@ addButton.forEach (elem => {
         const concepto = pic.nextElementSibling.innerText;
         const precio = padre.lastElementChild.innerText;
         const trashCan = iconRemove[0].cloneNode(false);
-        console.log(trashCan);
-        console.log(padre);
-        console.log(pic);
-        console.log(concepto);
-        console.log(precio);
         const newSlot = document.createElement("div");
         const newPic = pic.cloneNode(false);
         const newConcepto = document.createElement("p");
@@ -65,14 +68,26 @@ addButton.forEach (elem => {
         newSlot.appendChild(newPrecio);
         newSlot.appendChild(trashCan);
         cartProducts.appendChild(newSlot);  
-        contador.innerHTML = cartProducts.childElementCount;
+        contador.innerText = cartProducts.childElementCount;
         trashCan.addEventListener("click", () => {
             console.log("oprimi borrar")
             trashCan.parentElement.remove();
-            contador.innerHTML = cartProducts.childElementCount;
+            contador.innerText = cartProducts.childElementCount;
         })
     } )
 })
 
-
-
+const groupsubmit = document.getElementById("main__form--submitBtn");
+groupsubmit.addEventListener("click",() => {
+    group.classList.remove("show");
+    alert("Your information has been submited. We'll contact you shortly")
+})
+/*const picGallery = document.getElementById("main__section--galleryCont");
+const picButton = document.querySelectorAll(".main__article--imgGallery");
+picButton.forEach(elem => {
+    elem.addEventListener("click", () => {
+        picGallery.classList.toggle("main__article--slotbig");
+    })
+})
+console.log(picButton);*/
+contador.innerText = cartProducts.childElementCount;

@@ -28,8 +28,18 @@
     img {
         width: 2.5rem;
     }
-    .footer__article--whatsapp {
-        color: rgb(15 143 8);
-        font-weight: 600;
+    #groupReserveIcon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        cursor: pointer;
+        img {
+            width: 3.5rem;
+        }
+        p {
+        color: $maindarkcolor;
+        font-weight: 800;
+        font-size: 135%;
+        }
     }
 }

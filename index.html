@@ -25,7 +25,7 @@
     </header>
     <main>
         <aside class="main__banner main__banner--top">
-            <a href="courses.html" id="booking"><p>Discover Scuba Diving</p></a>
+            <a href="courses.html" id="dsdbanner"><p>Discover Scuba Diving</p></a>
         </aside>
         <section class="main__section--video" >
             <video src="VID/DSD-vid.mp4" controls autoplay muted replay ></video>
@@ -75,6 +75,30 @@
                 </div>
             </section>
         </section>
+        <section class="main__section--groupReserve ">
+            <img src="IMG/close.svg"  class="closeIcon">
+            <form action="">
+                <label for="fname">First Name</label>
+                <input class="main__form--input" type="text" id="fName" >
+                <br>    
+                <label for="lname">Last Name</label>
+                <input class="main__form--input" type="text" id="lName" >
+                <br>
+                <label for="nDivers">Number of Divers</label>
+                <input class="main__form--input" type="text" id="nDivers" >
+                <br>
+                <label for="date">Date </label>
+                <input class="main__form--input" type="date" id="date" >
+                <br>
+                <label for="mobile">Mobile </label>
+                <input class="main__form--input" type="tel" id="mobile" >
+                <br>
+                <label for="email">e-mail</label>
+                <input class="main__form--input" type="email" id="email" >
+                <br>
+                <input class="main__form--input" id="main__form--submitBtn" type="submit">
+            </form>
+        </section>
     </main>
     
     <footer>
@@ -93,9 +117,10 @@
                         <small><a href="https://www.padi.com/?lang=en"><b>PADI</b> <i>Professional Association of Diving Instructors</i> </a></small>
                         <br>
                     </div>
-                    <DIV >
-                        <img src="IMG/whatsapp.png" alt="whatsapp">
-                        <a href="fundives.html"    class="footer__article--whatsapp gridfoot4">Book through Whatsapp</a>
+                    <DIV id="groupReserveIcon" >
+                        <img src="IMG/people.svg" alt="groupReserve">
+                        <p>Group Reserve? Click Here</p>
+                        <!--<a href="fundives.html"    class="footer__article--whatsapp gridfoot4">Book through Whatsapp</a> -->
                     </DIV>
         </section>
     </footer>

@@ -18,7 +18,7 @@
             <i><img src="IMG/menu.svg" alt="menu" class="header__img--icon header__img--menu"></i>
             <a href="index.html"><img src="IMG/Logo.png" alt="Logo" class="header__logo"></a>
             <i><img src="IMG/cart.svg" alt="Cart" class="header__img--icon header__img--cartIcon">
-                <span id="header__i--count cartCont"  class="header__i--span badge circle">2</span></i>
+                <span id="header__i--count cartCont"  class="header__i--span badge circle">0</span></i>
             
 
         </section> 
@@ -30,19 +30,31 @@
                 Friends & SCUBA <small><sub>and a baby pineapple</sub></small>
             </p>
         </aside>
-        <section class="main__section--gallery" >
-            <div class="main__article--slot main__article--pic "><img src="Gallery/Gallery1.jpeg" alt="1" class=""></div>
-            <div class="main__article--slot main__article--pic"><img src="Gallery/Gallery3.jpeg" alt="2"  class=""></div>
-            <div class="main__article--slot main__article--pic"><img src="Gallery/Gallery8.jpeg" alt="3" class=""></div>
-            <div class="main__article--slot main__article--pic"><img src="Gallery/gallery12.jpeg" alt="4" class=""></div>
-            <div class="main__article--slot main__article--pic"><img src="Gallery/Gallery4.jpeg" alt="5" class=""></div>
-            <div class="main__article--slot main__article--pic"> <img src="Gallery/Gallery5.jpeg" alt="6" class=""></div>
-            <div class="main__article--slot main__article--pic"><img src="Gallery/Gallery7.jpeg" alt="7" class=""></div>
-            <div class="main__article--slot main__article--pic"><img src="Gallery/Gallery9.jpeg" alt="8" class=""></div>
-            <div class="main__article--slot main__article--pic"><img src="Gallery/Gallery2.jpeg" alt="9" class=""></div>
-            <div class="main__article--slot main__article--pic"><img src="Gallery/Gallery10.jpeg" alt="10" class=""></div>
-            <div class="main__article--slot main__article--pic"><img src="Gallery/Gallery11.jpeg" alt="11" class=""></div>
-            <div class="main__article--slot main__article--pic"><img src="Gallery/Gallery6.jpeg" alt="12" class="s"></div>
+        <section class="main__section--gallery" id="main__section--galleryCont" >
+            <div class="main__article--slot main__article--pic ">
+                <img src="Gallery/Gallery1.jpeg" alt="1" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery3.jpeg" alt="2"  class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery8.jpeg" alt="3" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/gallery12.jpeg" alt="4" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery4.jpeg" alt="5" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                 <img src="Gallery/Gallery5.jpeg" alt="6" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery7.jpeg" alt="7" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery9.jpeg" alt="8" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery2.jpeg" alt="9" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery10.jpeg" alt="10" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery11.jpeg" alt="11" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery6.jpeg" alt="12" class="main__article--imgGallery"></div>
 
         </section>
         <section class="main__section--menu">
@@ -60,7 +72,7 @@
             <button class="chekcoutButton">Checkout</button>
 
             <h2>Cart</h2>
-            <section class="main__section--cart ">
+            <section class="main__section--cart">
                 <div class="cartProd">
                         <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
                     <p>Fundive</p>
@@ -84,6 +96,30 @@
                 </div>
             </section>
         </section>
+        <section class="main__section--groupReserve ">
+            <img src="IMG/close.svg"  class="closeIcon">
+            <form action="">
+                <label for="fname">First Name</label>
+                <input class="main__form--input" type="text" id="fName" >
+                <br>    
+                <label for="lname">Last Name</label>
+                <input class="main__form--input" type="text" id="lName" >
+                <br>
+                <label for="nDivers">Number of Divers</label>
+                <input class="main__form--input" type="text" id="nDivers" >
+                <br>
+                <label for="date">Date </label>
+                <input class="main__form--input" type="date" id="date" >
+                <br>
+                <label for="mobile">Mobile </label>
+                <input class="main__form--input" type="tel" id="mobile" >
+                <br>
+                <label for="email">e-mail</label>
+                <input class="main__form--input" type="email" id="email" >
+                <br>
+                <input class="main__form--input" id="main__form--submitBtn" type="submit">
+            </form>
+        </section>
     </main>
     <hr>
     <footer>
@@ -102,10 +138,11 @@
                          <small><a href="https://www.padi.com/?lang=en"><b>PADI</b> <i>Professional Association of Diving Instructors</i> </a></small>
                          <br>
                      </div>
-                     <DIV >
-                         <img src="IMG/whatsapp.png" alt="whatsapp">
-                         <a href="fundives.html"    class="footer__article--whatsapp gridfoot4">Book through Whatsapp</a>
-                     </DIV>
+                     <DIV id="groupReserveIcon" >
+                        <img src="IMG/people.svg" alt="groupReserve">
+                        <p>Group Reserve? Click Here</p>
+                        <!--<a href="fundives.html"    class="footer__article--whatsapp gridfoot4">Book through Whatsapp</a> -->
+                    </DIV>
          </section>
      </footer>
  

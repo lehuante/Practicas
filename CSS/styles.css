@@ -58,7 +58,7 @@
   width: 100%;
   font-weight: 300;
   margin: 0;
-  padding: 0 auto;
+  padding: 0 1rem;
 }
 
 .header__section--logos {
@@ -160,7 +160,6 @@
   background-position-y: 30%;
   font-size: clamp(0.8rem, -0.057rem + 2.286vw, 2rem);
   font-weight: 600;
-  opacity: 1;
   text-decoration: none;
   color: rgb(243, 251, 255);
   box-sizing: border-box;
@@ -199,7 +198,7 @@
 .main__section--gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: clamp(1.3rem, 0.8rem + 1.333vw, 2rem);
+  gap: clamp(1.7rem, 1.486rem + 0.571vw, 2rem);
   padding: 2rem;
   justify-items: center;
   align-items: start;
@@ -228,6 +227,9 @@
   border-width: 0.1rem;
   align-items: center;
 }
+.main__section--gallery .main__article--slot p {
+  text-align: center;
+}
 .main__section--gallery .main__article--slot:hover {
   background-color: rgb(245, 245, 245);
   color: rgb(242, 158, 1);
@@ -248,34 +250,20 @@
   color: rgb(0, 195, 237);
   border-color: rgb(0, 195, 237);
 }
-.main__section--gallery .main__article--pic {
+.main__section--gallery .main__article--slotbig {
+  min-height: 7.2rem;
+  padding: 0.8rem;
+}
+.main__section--gallery .main__article--slotbig img {
+  width: 30rem;
+}
+.main__section--gallery .main__article--slotbig .main__article--pic {
   padding: 0.01rem;
   box-shadow: -1.3rem -0.8rem 1rem -1rem rgba(0, 0, 0, 0.3);
 }
-.main__section--gallery .main__article--divpic {
+.main__section--gallery .main__article--slotbig .main__article--divpic {
   display: flex;
   height: 15rem;
-}
-
-.main__section--nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  flex-wrap: nowrap;
-  align-items: center;
-  font-size: clamp(0.8rem, -0.057rem + 2.286vw, 2rem);
-  height: 23rem;
-  justify-content: space-evenly;
-  box-sizing: border-box;
-  border-radius: 0.5rem;
-  border-style: solid;
-  border-color: rgb(0, 195, 237);
-}
-.main__section--nav .main__nav--a {
-  color: rgb(243, 251, 255);
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.7rem;
 }
 
 .main__section--cartmain {
@@ -345,6 +333,39 @@ img {
   width: 5rem;
 }
 
+.main__section--groupReserve {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: -moz-min-content;
+  width: min-content;
+  background-color: rgb(245, 245, 245);
+  color: rgb(70, 130, 180);
+  padding: 1rem;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: -200%;
+  right: 0;
+  box-shadow: -0.5rem -0.5rem 0.7rem -0.7rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  transition: all 0.25s ease;
+}
+.main__section--groupReserve.show {
+  bottom: 0;
+}
+.main__section--groupReserve .closeIcon {
+  width: 10%;
+  opacity: 0.7;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.main__section--groupReserve .main__form--input {
+  color: rgb(70, 130, 180);
+  border-color: rgb(70, 130, 180);
+  background-color: rgba(0, 195, 237, 0.22);
+}
+
 .main__section--menu {
   width: 12rem;
   background-color: rgb(245, 245, 245);
@@ -403,7 +424,17 @@ img {
 .footer__article--ads img {
   width: 2.5rem;
 }
-.footer__article--ads .footer__article--whatsapp {
-  color: rgb(15, 143, 8);
-  font-weight: 600;
+.footer__article--ads #groupReserveIcon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.footer__article--ads #groupReserveIcon img {
+  width: 3.5rem;
+}
+.footer__article--ads #groupReserveIcon p {
+  color: rgb(70, 130, 180);
+  font-weight: 800;
+  font-size: 135%;
 }/*# sourceMappingURL=styles.css.map */
