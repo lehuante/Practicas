@@ -1,3 +1,4 @@
+
 const cartIcon = document.querySelector(".header__img--cartIcon");
 const cart = document.querySelector(".main__section--cartmain");
 cartIcon.addEventListener("click", () => {
@@ -39,7 +40,7 @@ const cartProducts = document.querySelector(".main__section--cart");
 const addButton = document.querySelectorAll(".addCartButton");
 const lastProd = document.querySelector(".last_cartProd");
 //console.log(trashCan);
-
+contador.innerText = cartProducts.childElementCount;
 iconRemove.forEach (elem => { 
     elem.addEventListener("click", () => {
         const padre = elem.parentElement;
