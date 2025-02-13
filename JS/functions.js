@@ -72,6 +72,7 @@ addButton.forEach (elem => {
         const newSlot = document.createElement("div");
         const newPic = document.createElement("img");
         newPic.setAttribute ("src", sourcePic);
+        newPic.setAttribute("class" , "main__cart--mainpic");
         const newConcepto = document.createElement("p");
         newConcepto.innerText = concepto;
         const newPrecio = document.createElement("p");
