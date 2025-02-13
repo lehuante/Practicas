@@ -54,11 +54,24 @@ addButton.forEach (elem => {
     elem.addEventListener("click", () => {
         const padre = elem.parentElement;
         const pic = padre.firstElementChild;
+        //console.log(pic.attributes);
+        //console.log(pic.attributes[0]);
+
+        const sourcePic = pic.getAttribute("src");
+        
+        
         const concepto = pic.nextElementSibling.innerText;
         const precio = padre.lastElementChild.innerText;
-        const trashCan = iconRemove[0].cloneNode(false);
+        const sourceTrashCan = iconRemove[0].getAttribute("src");
+        const trashCan = document.createElement("img");
+        trashCan.setAttribute("src", sourceTrashCan);
+        trashCan.setAttribute("class", "remove main__cart--removeicon")
+        console.log(sourceTrashCan);
+
+
         const newSlot = document.createElement("div");
-        const newPic = pic.cloneNode(false);
+        const newPic = document.createElement("img");
+        newPic.setAttribute ("src", sourcePic);
         const newConcepto = document.createElement("p");
         newConcepto.innerText = concepto;
         const newPrecio = document.createElement("p");
