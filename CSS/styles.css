@@ -253,6 +253,12 @@
 .main__section--gallery .main__article--slotbig {
   min-height: 7.2rem;
   padding: 0.8rem;
+  /* .main__article--divpic {
+       display: flex;  
+       height: 15rem;
+
+
+   }*/
 }
 .main__section--gallery .main__article--slotbig img {
   width: 30rem;
@@ -260,10 +266,6 @@
 .main__section--gallery .main__article--slotbig .main__article--pic {
   padding: 0.01rem;
   box-shadow: -1.3rem -0.8rem 1rem -1rem rgba(0, 0, 0, 0.3);
-}
-.main__section--gallery .main__article--slotbig .main__article--divpic {
-  display: flex;
-  height: 15rem;
 }
 
 .main__section--cartmain {
